@@ -12,6 +12,7 @@ Cuộc sống ngày càng hiện đại đi kèm với nhiều vấn đề về 
 - Hệ thống này không chỉ giúp người dùng giải quyết các vấn đề trong việc chăm sóc cây mà còn mở ra khả năng mở rộng áp dụng trong nông nghiệp thông minh, phù hợp với xu hướng phát triển bền vững và hiện đại hóa trong sản xuất nông nghiệp.
 
 
+![Biểu đồ không có tiêu đề drawio](https://github.com/user-attachments/assets/17086780-566b-4257-bb80-32f678ec18c7)
 
 
 
