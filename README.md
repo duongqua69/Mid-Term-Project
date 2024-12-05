@@ -13,9 +13,47 @@ Cuộc sống ngày càng hiện đại đi kèm với nhiều vấn đề về 
 - Xuất phát từ việc thích trồng và chăm sóc cây cảnh của bản, mong muốn tạo ra một giải pháp tự động giúp người chăm sóc cây trồng dễ dàng hơn.
 - Hệ thống này không chỉ giúp người dùng giải quyết các vấn đề trong việc chăm sóc cây mà còn mở ra khả năng mở rộng áp dụng trong nông nghiệp thông minh, phù hợp với xu hướng phát triển bền vững và hiện đại hóa trong sản xuất nông nghiệp.
 
+# Demo: 
+# Giao diện Node-RED: 
+
+![giao_dien](https://github.com/user-attachments/assets/ca49c4ea-e00d-43a8-9f5c-a289ca4b482e) 
+# Các chế độ điều khiển , thông số hiển thị ,trạng thái: 
+- Trên dashboard thể hiện các thông số về độ ẩm, đồ thị, trạng thái của máy bơm và chế độ điều khiển người dùng.
+- Có 2 chế độ AUTO và MANUAL : AUTO khi hệ thống tự động kiểm soát bơm , MANUAL khi người dùng tự điều khiển bơm. 
+
+![on_auto](https://github.com/user-attachments/assets/004fda27-26ee-4780-84a4-b8734f4cda67)
+- Chế độ AUTO khi bơm mở 
+
+![off_auto](https://github.com/user-attachments/assets/560bf582-5a01-45b8-8dec-e022729b1446)
+- Chế độ AUTO khi bơm đóng  
+
+![on_manual](https://github.com/user-attachments/assets/e6e1edc3-77f8-47ab-b8fb-01c2863416b1)
+- Chế độ MANUAL khi bơm mở 
+
+![off_manual](https://github.com/user-attachments/assets/dc2c800b-c9ec-4dfb-aec5-ab6462a9ae3e)
+
+- Chế độ MANUAL khi bơm đóng  
+
+# Hiển thị thông tin qua Serial và  HiveMQ qua MQTT: 
+
+- Các thông số độ ẩm và trạng thái được thể hiện qua các hình dưới: 
+![hivemq](https://github.com/user-attachments/assets/b7036e30-a34d-4b84-b8b3-fe4df3e7dd17)
+- Thông tin gửi và nhận trên HiveMQ 
+![chon_che_do_serial](https://github.com/user-attachments/assets/8f4a97a0-f7ee-4efa-97ec-7fb71604bd76)
+- Thông tin về chọn chế độ trên VSCode 
+![serial_mqtt](https://github.com/user-attachments/assets/52cfd9e2-11bf-4553-91b0-ac18754f39d7)
+- Thông tin về thông số, trạng thái trên VSCode
+
+# Ảnh setup linh kiện và video demo máy bơm khi mở:
+
+![462558426_556668457233836_727470844798820272_n](https://github.com/user-attachments/assets/503c456f-a1ab-4ea5-bcd0-95ef61020ebe)
+- Ảnh lắp linh kiện phần cứng 
 
 
 
+
+- Demo Video: 
+https://github.com/user-attachments/assets/f84d7eb9-4497-421b-9772-d5ed053baab5
 
 
 
