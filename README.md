@@ -37,12 +37,17 @@ Cuộc sống ngày càng hiện đại đi kèm với nhiều vấn đề về 
 # Hiển thị thông tin qua Serial và  HiveMQ qua MQTT: 
 
 - Các thông số độ ẩm và trạng thái được thể hiện qua các hình dưới: 
+
 ![hivemq](https://github.com/user-attachments/assets/b7036e30-a34d-4b84-b8b3-fe4df3e7dd17)
-- Thông tin gửi và nhận trên HiveMQ 
+- Thông tin gửi và nhận trên HiveMQ
+
+
 ![chon_che_do_serial](https://github.com/user-attachments/assets/8f4a97a0-f7ee-4efa-97ec-7fb71604bd76)
 - Thông tin về chọn chế độ trên VSCode 
+  
 ![serial_mqtt](https://github.com/user-attachments/assets/52cfd9e2-11bf-4553-91b0-ac18754f39d7)
 - Thông tin về thông số, trạng thái trên VSCode
+  
 
 # Ảnh setup linh kiện và video demo máy bơm khi mở:
 
