@@ -3,7 +3,14 @@
 # Nội dung: 
 - ESP32 đọc dữ liệu từ cảm biến độ ẩm đất và gửi thông tin qua giao thức MQTT đến Node-RED. Node-RED xử lý dữ liệu, hiển thị trên dashboard, và điều khiển bơm nước tự động hoặc thủ công từ giao diện web.
 # Sơ đồ khối: 
-![Biểu đồ không có tiêu đề drawio](https://github.com/user-attachments/assets/17086780-566b-4257-bb80-32f678ec18c7)
+![diagram](https://github.com/user-attachments/assets/a39e6c23-bf11-47eb-8667-75c768a6c86c) 
+
+# Linh kiện: 
+- ESP32 
+- Cảm biến độ ẩm đất 
+- Relay 5V 
+- Máy bơm mini 
+- Breadboard 
 # Đặt vấn đề: 
 Cuộc sống ngày càng hiện đại đi kèm với nhiều vấn đề về môi trường sống,chất lượng không khí nên càng ngày càng nhiều người có mong muốn trồng cây xanh để cải thiện không gian.Tuy nhiên, việc chăm sóc cây trồng, đặc biệt là tưới nước đúng thời điểm và đủ lượng, thường gặp nhiều khó khăn vì: 
 - Nhịp sống bận rộn: Nhiều người không có đủ thời gian để kiểm tra tình trạng đất và tưới cây đều đặn. 
