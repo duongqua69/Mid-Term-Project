@@ -1,0 +1,715 @@
+[
+    {
+        "id": "fd5bd47981fc67ea",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ce15458987d839a7",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "9ae09674b5c81c70",
+        "type": "ui_tab",
+        "name": "Irrigation System",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f81412374253e99b",
+        "type": "ui_group",
+        "name": "Độ ẩm hiển thị",
+        "tab": "9ae09674b5c81c70",
+        "order": 1,
+        "disp": true,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "33e1e02aa564f0e1",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "10bf30fcaeb1e0a5",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "412e08cd926e4a4fb9875fe7c53dda78.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b29d47843daa9068",
+        "type": "ui_group",
+        "name": "Trạng thái máy bơm",
+        "tab": "9ae09674b5c81c70",
+        "order": 2,
+        "disp": true,
+        "width": 5,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "845875edd6728d1c",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "0aa22c384a6f983c",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "mqtt_broker",
+        "type": "mqtt-broker",
+        "name": "MQTT Broker",
+        "broker": "broker_address",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "15",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "dashboard_group",
+        "type": "ui_group",
+        "name": "Irrigation",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "72291266dbe18afc",
+        "type": "ui_group",
+        "name": "Điều khiển",
+        "tab": "9ae09674b5c81c70",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "group_id",
+        "type": "ui_group",
+        "name": "Pump Control",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "broker_id",
+        "type": "mqtt-broker",
+        "name": "MQTT Broker",
+        "broker": "your_broker_address",
+        "port": "1883",
+        "clientid": "Node-RED",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "8376c71c57b456cc",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "f81412374253e99b",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d7ba48c3849b182e",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "f81412374253e99b",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c3643bb8411c9529",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "f81412374253e99b",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bb9f649e9dd69bca",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "f81412374253e99b",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "66e3e60cae2cc137",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "f81412374253e99b",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "155d3e1feeedff77",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "f81412374253e99b",
+        "order": 7,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "ec5a7cd1e5ea69b9",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "f81412374253e99b",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b431a461b61ac3da",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "f81412374253e99b",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a65471874ae4d44f",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "f81412374253e99b",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4762acf56270b746",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "f81412374253e99b",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0a9a2bbfe3c48728",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "72291266dbe18afc",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8b0df69edb1fd1fa",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "72291266dbe18afc",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b0eb9dbf06855b73",
+        "type": "ui_gauge",
+        "z": "fd5bd47981fc67ea",
+        "name": "",
+        "group": "f81412374253e99b",
+        "order": 1,
+        "width": 8,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Độ ẩm ",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 330,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "959955213e9c6e8a",
+        "type": "ui_chart",
+        "z": "fd5bd47981fc67ea",
+        "name": "",
+        "group": "f81412374253e99b",
+        "order": 8,
+        "width": 8,
+        "height": 4,
+        "label": "Đồ thị độ ẩm",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 330,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8254f50e8be92baa",
+        "type": "mqtt in",
+        "z": "fd5bd47981fc67ea",
+        "name": "",
+        "topic": "esp32/soil",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "10bf30fcaeb1e0a5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 80,
+        "wires": [
+            [
+                "b0eb9dbf06855b73",
+                "959955213e9c6e8a",
+                "cece9aba472824db"
+            ]
+        ]
+    },
+    {
+        "id": "cece9aba472824db",
+        "type": "debug",
+        "z": "fd5bd47981fc67ea",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 340,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "58e2a96e2c6e7ede",
+        "type": "mqtt out",
+        "z": "fd5bd47981fc67ea",
+        "name": "",
+        "topic": "esp32/relay",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10bf30fcaeb1e0a5",
+        "x": 690,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "da25aea6e8b747fd",
+        "type": "mqtt in",
+        "z": "fd5bd47981fc67ea",
+        "name": "",
+        "topic": "esp32/status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "10bf30fcaeb1e0a5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 70,
+        "y": 220,
+        "wires": [
+            [
+                "d0adbcb0223292df",
+                "7b7fcfbb435d2fcb"
+            ]
+        ]
+    },
+    {
+        "id": "d0adbcb0223292df",
+        "type": "ui_text",
+        "z": "fd5bd47981fc67ea",
+        "group": "b29d47843daa9068",
+        "order": 1,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "Pump Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 270,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "7b7fcfbb435d2fcb",
+        "type": "debug",
+        "z": "fd5bd47981fc67ea",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 160,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "manual_switch",
+        "type": "ui_switch",
+        "z": "fd5bd47981fc67ea",
+        "name": "Manual Pump Control",
+        "label": "Pump (Manual)",
+        "tooltip": "Control pump in manual mode",
+        "group": "72291266dbe18afc",
+        "order": 2,
+        "width": 5,
+        "height": 2,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "esp32/relay",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 500,
+        "y": 380,
+        "wires": [
+            [
+                "mqtt_out",
+                "58e2a96e2c6e7ede"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt_out",
+        "type": "mqtt out",
+        "z": "fd5bd47981fc67ea",
+        "name": "",
+        "topic": "esp32/mode",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10bf30fcaeb1e0a5",
+        "x": 750,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "manual_enable",
+        "type": "change",
+        "z": "fd5bd47981fc67ea",
+        "name": "Enable Manual Control",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "$$.payload = 'MANUAL'",
+                "tot": "jsonata"
+            }
+        ],
+        "x": 670,
+        "y": 120,
+        "wires": [
+            [
+                "manual_switch"
+            ]
+        ]
+    },
+    {
+        "id": "mode_dropdown",
+        "type": "ui_dropdown",
+        "z": "fd5bd47981fc67ea",
+        "name": "Mode Selector",
+        "label": "Mode",
+        "tooltip": "Switch between AUTO and MANUAL",
+        "place": "",
+        "group": "72291266dbe18afc",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "AUTO",
+                "value": "AUTO",
+                "type": "str"
+            },
+            {
+                "label": "MANUAL",
+                "value": "MANUAL",
+                "type": "str"
+            }
+        ],
+        "topic": "esp32/mode",
+        "topicType": "str",
+        "className": "",
+        "x": 460,
+        "y": 220,
+        "wires": [
+            [
+                "mqtt_out",
+                "manual_enable"
+            ]
+        ]
+    }
+]
